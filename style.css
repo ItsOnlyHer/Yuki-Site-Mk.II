@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'DepartureMono';
+  src: url('DepartureMono.ttf');
+}
+
+body, html {
+  font-family: 'DepartureMono';
+  background-color: black;
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+a { /* hyperlinks style */
+  color: white;
+  font-style: italic;
+  word-spacing: 80%;
+}
+
+a:visited {
+  font-style: italic;
+}
+
+a:hover {
+  color: lightgray;
+}
+
+/* Hide the "more" spans by default */
+#more {
+  display: none;
+}
+
+.wrapper {
+  font-family: 'DepartureMono';
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.links {
+  font-size: 115%;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.box {
+  border: 2px solid rgb(95, 97, 110);
+  border-radius: 0.5em;
+  padding: 2em;
+  max-width: 500px;
+  color: white;
+  background-color: #1a1a1a;
+  line-height: 1.6;
+  text-align: center;
+  width: 90vw;
+}
+
+.header {
+  font-family: 'DepartureMono', monospace;
+  font-size: 1.6em;
+  margin-bottom: 1em;
+  color: #ffffff;
+}
+
+.collapsible .content {
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.version {
+	font-size: 65%;
+}
